@@ -39,7 +39,7 @@ loop do
   while true
     print "Play again? (y/n): "
     answer = gets.chop.downcase
-    break unless answer == "y" || answer == "n"
+    break if answer == "y" || answer == "n"
     puts "Please enter 'y' or 'n'"
   end
   

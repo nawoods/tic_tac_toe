@@ -27,7 +27,7 @@ class Game
   
   # returns false if unsuccessful move
   def move(player, space_number)
-    space = @spaces[space_number]
+    space = @spaces[space_number.to_i]
     return false if !space.player.nil?
     space.player = player
     check_if_game_over(player)
