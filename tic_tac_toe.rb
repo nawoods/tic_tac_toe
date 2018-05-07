@@ -3,9 +3,9 @@ require "./game.rb"
 puts "Welcome to tic-tac-toe! It's a game where you tic, you tac, and you toe."
 
 loop do
-  puts "Enter player 1 name (X):"
+  print "Enter player 1 name (X): "
   player1_name = gets.chop
-  puts "Enter playet 2 name (O):"
+  print "Enter playet 2 name (O): "
   player2_name = gets.chop
   
   player1 = Player.new(player1_name, "X")

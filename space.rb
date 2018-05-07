@@ -3,6 +3,6 @@ class Space
   
   def to_s
     return " " if @player.nil?
-    return @player.letter
+    @player.letter
   end
 end
