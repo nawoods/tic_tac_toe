@@ -30,8 +30,7 @@ class Game
     space = @spaces[space_number]
     return false if !space.player.nil?
     space.player = player
-    puts check_if_game_over(player)
-    true
+    check_if_game_over(player)
   end
   
   private
@@ -49,7 +48,6 @@ class Game
     if @spaces.all? { |space| !space.player.nil? }
       return "Draw game!"
     end
-    
-    "keep playing"
+    "Move succeeded"
   end
 end
